@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+}
+h1{
+    width: 200px;
+    background-color: antiquewhite;
+}
+a{
+    color: #333;
+    text-decoration: 0;
+}
+h1::before{
+    content: "befor";
+    display: block;
+    color: red;
+    font-size: 14px;
+}
+/* 더보기 버튼 화살표 추가 */
+.link{
+    padding: 10px 20px;
+    background-color: rgb(148, 148, 148);
+    border-radius: 10px;
+    margin: 50px auto;
+    }
+    .link::after{
+        content:  "→";
+        margin letf: 10px ;
+    }
+.link:hover{
+    background-color: pink;
+    color: #fff;
+}
+.content{
+    width: 200px;
+    background-color: aqua;
+    margin: 50px auto;
+}
+/* 메뉴에 호버했을때 밑줄 */
+.link_hover{
+    color: red;
+
+}
+.link_hover::after{
+    content: "";
+    /* width: 40px; */
+    height: 2px;
+    background-color: blue;
+    display: block;
+    transition:all 0.s;
+}
+.link_hover:hover::after{
+    width: 40px;
+}
+.content2{
+    width: 200px;
+    background-color: rgb(209, 190, 190);
+    color: white;
+    margin: 0 auto;
+}
+.link2_hover::after{
+    content: "";
+    width: 50px;
+    background-color: black;
+    display: block;
+}
+.link2_hover:hover::after{
+    width: 40px;
+}
+.footer ul{
+    display: flex;
+}
+.footer ul li a:hover{
+    text-decoration: underline;
+}
+.footer ul li a::after{
+    content: "";
+    width: 1px;
+    height: 12px;
+    margin: 0 20px;
+    background-color: red;
+    display: inline-block;
+}
+.footer ul li:last-child a::after{
+content:none;
+width: 0;
+}
+
+/* 이미지 어둡게 오버레이 */
+.banner{
+    width: 500px;
+    height: 400px;
+    background: url("");
+}
+.banner::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0,0,0,0.5); */
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: black; */
+}    
+banner h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    color: #fff;
+    z-index: 2;
+}

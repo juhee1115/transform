@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li, ul{
+    list-style: none;
+}
+li.new::before{
+    content: "new";
+    font-size: x-small;
+    color: red;
+    border-radius: 5px;
+    margin: 5px;
+}
+h1::before{
+    content: "💛";
+    margin: 5px;
+    font-size: 12px;
+    background-color: black;
+}
+h1::after{
+      content: "💛";
+    margin: 5px;
+    font-size: 12px;
+    background-color: black;
+}
+li.out::before{
+    content: "[3/20 재입고예정]";
+     font-size: x-small;
+    color: rgb(0, 46, 250);
+    border-radius: 5px;
+    margin: 5px;
+}

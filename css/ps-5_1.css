@@ -1,0 +1,77 @@
+.banner{
+    width: 500px;
+    height: 400px;
+    background: url("image/kakao.jpg");
+    position: relative;
+}
+.banner::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+   background-color: rgba(0,0,0,0.5);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: black; */
+}    
+.banner h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    color: #fff;
+    z-index: 2;
+}
+.banner h2::after{
+    content: "";
+    display: block;
+    background-color: #fff;
+    width: 0;
+    height: 2px;
+    transition: width 0.3s;
+    margin-top: 5px;
+}
+.banner h2:hover::after{
+    width: 100%;
+}
+
+.banner2{
+    width: 600px;
+    height: 400px;
+    background: url("image/kbs.jpg");
+    background-size: cover;
+    position: relative;
+}
+.banner2::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    content: "";
+    top: 0;
+    left: 0;
+}
+.banner2 h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    z-index: 2;
+    font-size: 50px;
+}
+.banner2 h2::after{
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: #fff;
+    transition: width 0.3s;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-top: 5px;
+}
+.banner2 h2:hover::after{
+    width: 100%;
+}
