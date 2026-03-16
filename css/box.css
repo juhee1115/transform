@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li,
+ul {
+  list-style: none;
+}
+.box{
+    width: 1200px;
+    height: 800px;
+    background-color: antiquewhite;
+    display: flex;
+}
+header {
+  background-color: rgb(80, 80, 80);
+  width: 350px;
+  height: 800px;
+  display: flex;
+}
+header h2 {
+  font-size: 60px;
+  color: aliceblue;
+}
+.menu {
+  background-color: rgb(204, 204, 204);
+}
+.menu li {
